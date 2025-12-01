@@ -1,0 +1,498 @@
+{
+  "generated": "2025-11-30T16:47:55.634Z",
+  "totalImages": 52,
+  "titlesFromMetadata": 37,
+  "titlesFromFilename": 15,
+  "categories": [
+    {
+      "id": "ads",
+      "name": "Advertising"
+    },
+    {
+      "id": "design",
+      "name": "Design"
+    },
+    {
+      "id": "illust",
+      "name": "Illustration"
+    },
+    {
+      "id": "logos",
+      "name": "Logo Design"
+    },
+    {
+      "id": "pubs",
+      "name": "Publications"
+    }
+  ],
+  "images": [
+    {
+      "src": "images/nettle.svg",
+      "filename": "nettle.svg",
+      "title": "Nettle",
+      "titleSource": "filename",
+      "category": null,
+      "categoryName": "Uncategorized",
+      "extension": ".svg"
+    },
+    {
+      "src": "images/ads/aaos.jpg",
+      "filename": "aaos.jpg",
+      "title": "Public Service Announcement ad campaign for the American Association of Orthopaedic Surgeons.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/BetsyShoesx800.jpg",
+      "filename": "BetsyShoesx800.jpg",
+      "title": "Bus shelter for Betsy Fisher featuring shoes. Ad was based on broach with shoes picked to match.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/certiPUR_ads.jpg",
+      "filename": "certiPUR_ads.jpg",
+      "title": "Brochure, ads and social media promoting non-profit CertiPUR-US flexible poluyurethane foam certification.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/meydenbauer.jpg",
+      "filename": "meydenbauer.jpg",
+      "title": "Ad campaign for Meydenbauer Convention Center in suburbs outside Seattle, WA.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/PosterBetsyFisherBusShelterx1200.jpg",
+      "filename": "PosterBetsyFisherBusShelterx1200.jpg",
+      "title": "Betsy Fisher bus shelter; shoe shot without foot so foot was illustrated.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/RonaldMcDonaldBullying3.jpg",
+      "filename": "RonaldMcDonaldBullying3.jpg",
+      "title": "Experimental comp for a McDonalds anti-bullying ad.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/WashAutoShow22.jpg",
+      "filename": "WashAutoShow22.jpg",
+      "title": "Brochure, ad and social media campaign for Washington Auto Show.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/weta.jpg",
+      "filename": "weta.jpg",
+      "title": "Bus shelter, bus sign and bus interior poster campaign for WETA-FM.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/Whole_World's_Against_You_v4.jpg",
+      "filename": "Whole_World's_Against_You_v4.jpg",
+      "title": "Experimental mental health ad.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/you-can-swim-right_v2x800.jpg",
+      "filename": "you-can-swim-right_v2x800.jpg",
+      "title": "Sketch for experimental mental health ad.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/ATP-Sales-Packet-DR3-1v32.gif",
+      "filename": "ATP-Sales-Packet-DR3-1v32.gif",
+      "title": "ATP Sales Packet DR3 1",
+      "titleSource": "filename",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".gif"
+    },
+    {
+      "src": "images/design/BrochArtToDineForx1200.jpg",
+      "filename": "BrochArtToDineForx1200.jpg",
+      "title": "Creative Alliance \"Art to Dine For\" booklet, outlining dining events in Baltimore. Design and illustration.",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/buffjam.jpg",
+      "filename": "buffjam.jpg",
+      "title": "Design and illustration for Buffalo Jambalaya, a Cajun and zydeco dance camp in West Virginia.",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/Dancing_Til_Dusk_2024Website.png",
+      "filename": "Dancing_Til_Dusk_2024Website.png",
+      "title": "Dancing Til Dusk 2024Website",
+      "titleSource": "filename",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".png"
+    },
+    {
+      "src": "images/design/DTD_Poster_2023_v4_portfolio.jpg",
+      "filename": "DTD_Poster_2023_v4_portfolio.jpg",
+      "title": "Poster for Dancing Til Dusk, dance instruction and dances in the summer in downtown Seattle parks, now in its  18th year. (2025)",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/FMCS.gif",
+      "filename": "FMCS.gif",
+      "title": "FMCS",
+      "titleSource": "filename",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".gif"
+    },
+    {
+      "src": "images/design/holesposter.jpg",
+      "filename": "holesposter.jpg",
+      "title": "Poster concept for play \"Holes\" at Seattle Children's Theater.",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/MobilityPoster.jpg",
+      "filename": "MobilityPoster.jpg",
+      "title": "Poster for Innovation in Mobility Public Policy Summit",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/natgeochina.jpg",
+      "filename": "natgeochina.jpg",
+      "title": "Brochure for promoting subscriptions to National Geographic magazine at their Terracotta Warriors exhibit.",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/PolishEmbassyBannerFinal.jpg",
+      "filename": "PolishEmbassyBannerFinal.jpg",
+      "title": "Stand-up banner for use by the Polish Embassy at exhibits, events and presentations.",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/TardiGras.jpg",
+      "filename": "TardiGras.jpg",
+      "title": "Poster for \"Tardi Gras\" (post-Mardi Gras) event with the D.C. band Wild Anacostias",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/TTGPocketFolder.jpg",
+      "filename": "TTGPocketFolder.jpg",
+      "title": "Pocket folder and inserts for Technology Trends Group, a technology installation company in Washington, DC",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/design/WAS_car_wrap_2019.jpg",
+      "filename": "WAS_car_wrap_2019.jpg",
+      "title": "Car wrap designed for the Washington Auto Show",
+      "titleSource": "metadata",
+      "category": "design",
+      "categoryName": "Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/Alt-Another-Bike-Poster-6-rev.jpg",
+      "filename": "Alt-Another-Bike-Poster-6-rev.jpg",
+      "title": "Concept poster for Sea Gull Century bike ride",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/AprilGreiman8.jpg",
+      "filename": "AprilGreiman8.jpg",
+      "title": "AprilGreiman8",
+      "titleSource": "filename",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/Back-to-Future-Bannerv3x1200.jpg",
+      "filename": "Back-to-Future-Bannerv3x1200.jpg",
+      "title": "Back To Future Banner",
+      "titleSource": "filename",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/bicyclistx1200.jpg",
+      "filename": "bicyclistx1200.jpg",
+      "title": "Illustration of bicyclist",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/eagle.jpg",
+      "filename": "eagle.jpg",
+      "title": "Variations on a bald eagle",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/house.jpg",
+      "filename": "house.jpg",
+      "title": "Editorial illustration, planting fruit trees in the city",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/Mask4.jpg",
+      "filename": "Mask4.jpg",
+      "title": "Mardi Gras mask illustration",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/owl.jpg",
+      "filename": "owl.jpg",
+      "title": "Owl logo illustration",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/R&Rposters.jpg",
+      "filename": "R&Rposters.jpg",
+      "title": "Illustration concepts for Rhythm & Roots Festival posters",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/Rocketx1200.jpg",
+      "filename": "Rocketx1200.jpg",
+      "title": "3D spacecraft created in Illustrator",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/illust/StopThinkConnectv5.6x1200.jpg",
+      "filename": "StopThinkConnectv5.6x1200.jpg",
+      "title": "Think before you click poster",
+      "titleSource": "metadata",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/Acculyte-Logo.jpg",
+      "filename": "Acculyte-Logo.jpg",
+      "title": "Acculyte lighting electronics logo",
+      "titleSource": "metadata",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/adaptivemethods.gif",
+      "filename": "adaptivemethods.gif",
+      "title": "Adaptivemethods",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".gif"
+    },
+    {
+      "src": "images/logos/aspice_restaurant.jpg",
+      "filename": "aspice_restaurant.jpg",
+      "title": "Aspice Restaurant",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/BEAFest2008logoFINALOUT.jpg",
+      "filename": "BEAFest2008logoFINALOUT.jpg",
+      "title": "BEAFest2008logoFINALOUT",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/CDC-Logo.jpg",
+      "filename": "CDC-Logo.jpg",
+      "title": "CDC Logo",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/Creative-Coffeehouse.jpg",
+      "filename": "Creative-Coffeehouse.jpg",
+      "title": "Creative Coffeehouse",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/fireTest.jpg",
+      "filename": "fireTest.jpg",
+      "title": "FireTest",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/IDiReservex1200.jpg",
+      "filename": "IDiReservex1200.jpg",
+      "title": "IDiReserve",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/RhythmRootsLogo.jpg",
+      "filename": "RhythmRootsLogo.jpg",
+      "title": "RhythmRootsLogo",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/SHaW-CENTER-7_2024-Bag.jpg",
+      "filename": "SHaW-CENTER-7_2024-Bag.jpg",
+      "title": "SHaW CENTER 7 2024 Bag",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/AS77_Cover1NEW.jpg",
+      "filename": "AS77_Cover1NEW.jpg",
+      "title": "American Style Fall Arts Preview cover design",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/AS78_Pg66-67x1200.jpg",
+      "filename": "AS78_Pg66-67x1200.jpg",
+      "title": "American Style article design and production",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/photomedia_covers.jpg",
+      "filename": "photomedia_covers.jpg",
+      "title": "PhotoMedia magazine cover designs",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/photomedia_inHarmsWay.jpg",
+      "filename": "photomedia_inHarmsWay.jpg",
+      "title": "Spread design, PhotoMedia magazine",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/photomediaMovieStars.jpg",
+      "filename": "photomediaMovieStars.jpg",
+      "title": "PhotoMedia spread design",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/Safarix1200.jpg",
+      "filename": "Safarix1200.jpg",
+      "title": "PhotoMedia spread design",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/urbanite_concept.jpg",
+      "filename": "urbanite_concept.jpg",
+      "title": "Concept spread design and illustration, Urbanite, Ideas That Could Change Baltimore",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deane Nettles — Design Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="images/nettle.svg" alt="Deane Nettles Logo" class="logo">
+            <div>
+                <h1 class="site-title">Deane <span>Nettles</span></h1>
+                <p class="tagline">Graphic Design & Illustration</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="filter-nav">
+        <div class="filter-buttons" id="filterButtons">
+            <!-- Buttons generated dynamically -->
+        </div>
+    </nav>
+
+    <main class="gallery-container">
+        <div class="gallery" id="gallery">
+            <div class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading portfolio...</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="slideshow">
+        <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous">&#10094;</button>
+        <div class="modal-content">
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <p class="modal-category" id="modalCategory"></p>
+                <p class="image-counter" id="imageCounter"></p>
+            </div>
+        </div>
+        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Deane Nettles. All rights reserved.</p>
+        <p><button class="filter-btn"><a href="resume.html">Resume</a></button>
+        </p>
+    </footer>
+
+    <script>
+        // Gallery State
+        let manifest = null;
+        let filteredImages = [];
+        let currentFilter = 'all';
+        let currentIndex = 0;
+
+        // DOM Elements
+        const gallery = document.getElementById('gallery');
+        const filterButtons = document.getElementById('filterButtons');
+        const modal = document.getElementById('slideshow');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCategory = document.getElementById('modalCategory');
+        const imageCounter = document.getElementById('imageCounter');
+        const closeBtn = document.getElementById('closeBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        // Load manifest and initialize gallery
+        async function init() {
+            try {
+                const response = await fetch('images-manifest.json');
+                if (!response.ok) throw new Error('Failed to load manifest');
+                
+                manifest = await response.json();
+                
+                // Filter out utility images (keep only categorized portfolio pieces)
+                manifest.images = manifest.images.filter(img => img.category !== null);
+                
+                buildFilterButtons();
+                filterImages('all');
+                
+            } catch (error) {
+                console.error('Error loading gallery:', error);
+                gallery.innerHTML = `
+                    <div class="error">
+                        <p>⚠️ Could not load gallery.</p>
+                        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                            Make sure to run <code>node build-gallery.js</code> first.
+                        </p>
+                    </div>
+                `;
+            }
+        }
+
+        // Build category filter buttons
+        function buildFilterButtons() {
+            const allCount = manifest.images.length;
+            
+            let html = `<button class="filter-btn active" data-filter="all">
+                All<span class="count">${allCount}</span>
+            </button>`;
+            
+            manifest.categories.forEach(cat => {
+                const count = manifest.images.filter(img => img.category === cat.id).length;
+                html += `<button class="filter-btn" data-filter="${cat.id}">
+                    ${cat.name}<span class="count">${count}</span>
+                </button>`;
+            });
+            
+            filterButtons.innerHTML = html;
+            
+            // Add click handlers
+            filterButtons.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterButtons.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    filterImages(btn.dataset.filter);
+                });
+            });
+        }
+
+        // Filter and render images
+        function filterImages(filter) {
+            currentFilter = filter;
+            
+            if (filter === 'all') {
+                filteredImages = [...manifest.images];
+            } else {
+                filteredImages = manifest.images.filter(img => img.category === filter);
+            }
+            
+            renderGallery();
+        }
+
+        // Render gallery items
+        function renderGallery() {
+            if (filteredImages.length === 0) {
+                gallery.innerHTML = '<div class="loading"><p>No images found.</p></div>';
+                return;
+            }
+
+            gallery.innerHTML = filteredImages.map((img, index) => `
+                <div class="gallery-item" data-index="${index}" style="animation-delay: ${index * 0.05}s">
+                    <img src="${img.src}" alt="${img.title}" loading="lazy">
+                    <div class="overlay">
+                        <p class="title">${img.title}</p>
+                        <p class="category-tag">${img.categoryName}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // Add click handlers for slideshow
+            gallery.querySelectorAll('.gallery-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    openSlideshow(parseInt(item.dataset.index));
+                });
+            });
+        }
+
+        // Slideshow functions
+        function openSlideshow(index) {
+            currentIndex = index;
+            updateSlideshow();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSlideshow() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function updateSlideshow() {
+            const img = filteredImages[currentIndex];
+            modalImage.src = img.src;
+            modalImage.alt = img.title;
+            modalTitle.textContent = img.title;
+            modalCategory.textContent = img.categoryName;
+            imageCounter.textContent = `${currentIndex + 1} / ${filteredImages.length}`;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % filteredImages.length;
+            updateSlideshow();
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + filteredImages.length) % filteredImages.length;
+            updateSlideshow();
+        }
+
+        // Event listeners
+        closeBtn.addEventListener('click', closeSlideshow);
+        nextBtn.addEventListener('click', nextImage);
+        prevBtn.addEventListener('click', prevImage);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeSlideshow();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!modal.classList.contains('active')) return;
+            
+            switch(e.key) {
+                case 'ArrowRight': nextImage(); break;
+                case 'ArrowLeft': prevImage(); break;
+                case 'Escape': closeSlideshow(); break;
+            }
+        });
+
+        // Touch swipe support for mobile
+        let touchStartX = 0;
+        modal.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        });
+
+        modal.addEventListener('touchend', (e) => {
+            const touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextImage();
+                else prevImage();
+            }
+        });
+
+        // Initialize
+        init();
+    </script>
+</body>
+</html>
+

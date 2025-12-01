@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* STRUCTURE */
+
+* {margin:0; padding:0; box-sizing:border-box; }
+html {font-size:62.5%; -webkit-text-size-adjust: 100%; line-height:1.6;}
+body {background-color:black; font-family:verdana, arial, sans-serif;}
+footer {background-color:black; color:white; }
+footer {padding:20px; text-align:center;}
+#wrap {background-color:white;}
+main {max-width:700px; margin:0 auto; color:#555; text-align:center;}
+#logo {margin:20px;}
+iframe {border:0;}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3 {line-height:1.2;margin-bottom:.6rem;}
+h1 {font-size:2.4rem;}
+h2 {font-size:2.0rem;}
+h3 {font-size:1.8rem;}
+p, ul, ol, h4 {font-size:1.6rem;}
+footer p {font-size:1.2rem; color:#ccc;}
+main h1, main p {margin:20px;}
+main p {margin:00 0 40px 0;}
+main h1, main h2 {line-height:1.2;}
+main h1 {margin-top:10px; }
+main h2 {margin-top:-15px;}
+p.desc {text-align:center; margin-top:20px; font-size:14px;}
+
+
+/* LINKS */
+
+header li {display:inline; margin:0 5px;}
+header nav a:link, header nav a:visited {color:#ccc; text-decoration:none; font-size:13px; font-style:normal;}
+header nav a:hover, header nav a:focus {color:white;}
+
+a:link.findme, a:visited.findme {color:white; font-weight:bold; font-style:normal;}
+a:hover.findme, a:focus.findme {background-color:rgba(0,0,0,0.5)}
+.findme {background-color: #c41230; text-align:center; padding:10px 20px;}
+
+
+footer a:link, footer a:visited {text-decoration:none; color:skyblue; font-style:normal;}
+footer a:hover, footer a:focus {color:white;}
+
+/* SKIP LINK */
+.skip {
+  width: 100%;
+}
+
+.skip .skip__item {
+  position: relative;
+  list-style: none;
+}
+
+.skip .skip__item a {
+  color: #ffffff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  background: shade(#3ba193, 18%);
+  padding: 0.85em;
+  position: absolute;
+  transform: translateY(-250%);
+  text-decoration: none;
+  z-index: 99;
+}
+
+.skip .skip__item a:focus {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: slideDown;
+}
+
+	 
+/* TOPNAV */
+	
+	/* Add a black background color to the top navigation */
+	.topnav {
+		 overflow: hidden; 
+		 background-color:black;
+		 padding:12px; 
+		 text-align:center;
+	}
+	
+	.topnav li {
+		display:inline;
+		}
+
+	/* Style the links inside the navigation bar */
+	.topnav a {
+		 color: #f2f2f2;
+		 text-decoration: none;
+		 margin-right:15px;
+		 font-size:13px;
+	}
+
+	/* Change the color of links on hover */
+	.topnav a:hover {
+		 color: white;
+	}
+
+	/* We tell .topnav a.icon to hide. */
+	.topnav a.icon {
+		display:none; 
+		position:absolute; 
+		right:0px; 
+		top:12px;
+	}
+
+/* GOOGLE TRANSLATE */
+#google_translate_element {margin-top:2em; margin-top:2rem;}
+
+/* SHOW HIDE */
+
+.show {display:none;}
+.hide {display:inline;}
+
+	
+	
+/* SLIDESHOW */
+
+#image {margin:0 0px 0 5%; outline:1px solid #999; width:90%; max-width:700px;}
+
+/* CLEARFIX */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+	
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:750px) and (orientation: landscape) {
+	#image {width:70%;margin:0 0px 0 15%; }
+}
+
+
+@media only screen and (max-width:450px) {
+	#image {width:90%;margin:0 0px 0 5%; }
+	.hide {display:none;}
+	h1 {font-size:1.7rem;}
+	h2 {font-size:1.5rem;}
+	p {font-size:1.4rem;}
+	footer p {font-size:1.0rem; }
+	footer p.links {line-height:2;}
+	
+}
+
+/* TOPNAV MEDIA */
+	
+	/* When the screen is less than 850 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 850px) {
+	.topnav {text-align:left;}
+	.topnav li:not(:first-child) {display: none;} /* everything except first-child hidden */
+	.topnav a.icon { /* icon displays */
+	display: block;
+	}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 850px) {
+	.topnav.responsive a.icon { /* positions icon */
+		position: absolute;
+		right: 0px;
+		top: 15px;
+	}
+	.topnav.responsive li { /* tells links to stack */
+		float: none;
+		display: block;
+		text-align: left;
+		margin-bottom:6px;
+	}
+}

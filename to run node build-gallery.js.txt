@@ -1,0 +1,2 @@
+cd /Users/deanenettles/Documents/GitHub/Deane-New-Site_2
+node build-gallery.js

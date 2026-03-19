@@ -97,7 +97,7 @@
             gap: 0.5rem;
         }
 
-        .filter-btn {
+        .filter-btn, .footer-btn {
             background: var(--bg-secondary);
             border: 1px solid var(--border);
             color: var(--text-secondary);
@@ -111,20 +111,23 @@
             transition-property: background, border-color, color, box-shadow;
         }
 
-        .filter-btn:hover {
+        .footer-btn {margin:.5rem 0;}
+
+        .filter-btn:hover, .footer-btn:hover
+ {
             background: #f0f0f0;
             border-color: var(--text-muted);
             color: var(--text-primary);
         }
 
-        .filter-btn.active {
+        .filter-btn.active, .footer-btn:active {
             background: var(--accent);
             border-color: var(--accent);
             color: white;
             box-shadow: 0 4px 20px var(--accent-glow);
         }
 
-        .filter-btn .count {
+        .filter-btn .count, .footer-btn .count {
             display: inline-block;
             background: rgba(255,255,255,0.15);
             padding: 0.1rem 0.5rem;
@@ -133,7 +136,7 @@
             margin-left: 0.5rem;
         }
 
-        .filter-btn.active .count {
+        .filter-btn.active .count, .footer-btn.active .count {
             background: rgba(255,255,255,0.25);
         }
 
@@ -371,6 +374,8 @@
             color: var(--accent);
             text-decoration: none;
         }
+
+        footer .copy {margin-top:1rem;}
 
         /* Responsive */
         @media (max-width: 768px) {

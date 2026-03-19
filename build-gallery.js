@@ -23,9 +23,11 @@ const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 const CATEGORY_NAMES = {
   'ads': 'Advertising',
   'design': 'Design',
+  'fonts': 'Fonts',
   'illust': 'Illustration',
   'logos': 'Logo Design',
   'pubs': 'Publications'
+
 };
 
 /**

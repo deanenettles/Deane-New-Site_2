@@ -1,5 +1,5 @@
 {
-  "generated": "2025-11-30T16:47:55.634Z",
+  "generated": "2026-03-19T22:13:38.672Z",
   "totalImages": 52,
   "titlesFromMetadata": 37,
   "titlesFromFilename": 15,
@@ -11,6 +11,10 @@
     {
       "id": "design",
       "name": "Design"
+    },
+    {
+      "id": "fonts",
+      "name": "Fonts"
     },
     {
       "id": "illust",
@@ -243,6 +247,15 @@
       "extension": ".jpg"
     },
     {
+      "src": "images/fonts/fireTest.jpg",
+      "filename": "fireTest.jpg",
+      "title": "FireTest",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
       "src": "images/illust/Alt-Another-Bike-Poster-6-rev.jpg",
       "filename": "Alt-Another-Bike-Poster-6-rev.jpg",
       "title": "Concept poster for Sea Gull Century bike ride",
@@ -390,15 +403,6 @@
       "src": "images/logos/Creative-Coffeehouse.jpg",
       "filename": "Creative-Coffeehouse.jpg",
       "title": "Creative Coffeehouse",
-      "titleSource": "filename",
-      "category": "logos",
-      "categoryName": "Logo Design",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/logos/fireTest.jpg",
-      "filename": "fireTest.jpg",
-      "title": "FireTest",
       "titleSource": "filename",
       "category": "logos",
       "categoryName": "Logo Design",

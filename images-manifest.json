@@ -1,7 +1,7 @@
 {
-  "generated": "2026-03-19T22:13:38.672Z",
-  "totalImages": 52,
-  "titlesFromMetadata": 37,
+  "generated": "2026-03-20T02:05:10.327Z",
+  "totalImages": 53,
+  "titlesFromMetadata": 38,
   "titlesFromFilename": 15,
   "categories": [
     {
@@ -150,7 +150,7 @@
     {
       "src": "images/design/buffjam.jpg",
       "filename": "buffjam.jpg",
-      "title": "Design and illustration for Buffalo Jambalaya, a Cajun and zydeco dance camp in West Virginia.",
+      "title": "Poster with linolium-cut illustration",
       "titleSource": "metadata",
       "category": "design",
       "categoryName": "Design",
@@ -202,9 +202,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/design/natgeochina.jpg",
-      "filename": "natgeochina.jpg",
-      "title": "Brochure for promoting subscriptions to National Geographic magazine at their Terracotta Warriors exhibit.",
+      "src": "images/design/NatGeoChina2x1200.jpg",
+      "filename": "NatGeoChina2x1200.jpg",
+      "title": "Magazine sales brochure for Terra Cotta Warriors exhibit",
       "titleSource": "metadata",
       "category": "design",
       "categoryName": "Design",
@@ -364,13 +364,13 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/logos/adaptivemethods.gif",
-      "filename": "adaptivemethods.gif",
-      "title": "Adaptivemethods",
-      "titleSource": "filename",
+      "src": "images/logos/adaptivemethodsx900.jpg",
+      "filename": "adaptivemethodsx900.jpg",
+      "title": "Logo for engineering firm that works with the U.S. Navy",
+      "titleSource": "metadata",
       "category": "logos",
       "categoryName": "Logo Design",
-      "extension": ".gif"
+      "extension": ".jpg"
     },
     {
       "src": "images/logos/aspice_restaurant.jpg",
@@ -416,6 +416,15 @@
       "category": "logos",
       "categoryName": "Logo Design",
       "extension": ".jpg"
+    },
+    {
+      "src": "images/logos/igym.gif",
+      "filename": "igym.gif",
+      "title": "Igym",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".gif"
     },
     {
       "src": "images/logos/RhythmRootsLogo.jpg",
@@ -465,16 +474,16 @@
     {
       "src": "images/pubs/photomedia_inHarmsWay.jpg",
       "filename": "photomedia_inHarmsWay.jpg",
-      "title": "Spread design, PhotoMedia magazine",
+      "title": "Spread on photojournalism for PhotoMedia",
       "titleSource": "metadata",
       "category": "pubs",
       "categoryName": "Publications",
       "extension": ".jpg"
     },
     {
-      "src": "images/pubs/photomediaMovieStars.jpg",
-      "filename": "photomediaMovieStars.jpg",
-      "title": "PhotoMedia spread design",
+      "src": "images/pubs/ReneeRussoSpreadx2000.jpg",
+      "filename": "ReneeRussoSpreadx2000.jpg",
+      "title": "Greg Gorman spread from PhotoMedia magazine",
       "titleSource": "metadata",
       "category": "pubs",
       "categoryName": "Publications",

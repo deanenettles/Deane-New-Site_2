@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-20T15:59:11.056Z",
-  "totalImages": 53,
-  "titlesFromMetadata": 39,
-  "titlesFromFilename": 14,
-  "mobileVersions": 0,
+  "generated": "2026-03-20T19:04:25.492Z",
+  "totalImages": 59,
+  "titlesFromMetadata": 38,
+  "titlesFromFilename": 21,
+  "mobileVersions": 7,
   "categories": [
     {
       "id": "ads",
@@ -272,11 +272,71 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/fonts/fireTest.jpg",
-      "srcMobile": null,
-      "filename": "fireTest.jpg",
-      "title": "Font developed for annual \"Dancing til Dusk\" music festival in downtown Seattle",
-      "titleSource": "metadata",
+      "src": "images/fonts/cassandre.jpg",
+      "srcMobile": "images-mobile/fonts/cassandre.jpg",
+      "filename": "cassandre.jpg",
+      "title": "Cassandre",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/curlyfont.jpg",
+      "srcMobile": "images-mobile/fonts/curlyfont.jpg",
+      "filename": "curlyfont.jpg",
+      "title": "Curlyfont",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/fire.jpg",
+      "srcMobile": "images-mobile/fonts/fire.jpg",
+      "filename": "fire.jpg",
+      "title": "Fire",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/gridfont3.jpg",
+      "srcMobile": "images-mobile/fonts/gridfont3.jpg",
+      "filename": "gridfont3.jpg",
+      "title": "Gridfont3",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/relax.jpg",
+      "srcMobile": "images-mobile/fonts/relax.jpg",
+      "filename": "relax.jpg",
+      "title": "Relax",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/spice.jpg",
+      "srcMobile": "images-mobile/fonts/spice.jpg",
+      "filename": "spice.jpg",
+      "title": "Spice",
+      "titleSource": "filename",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/wider.jpg",
+      "srcMobile": "images-mobile/fonts/wider.jpg",
+      "filename": "wider.jpg",
+      "title": "Wider",
+      "titleSource": "filename",
       "category": "fonts",
       "categoryName": "Fonts",
       "extension": ".jpg"

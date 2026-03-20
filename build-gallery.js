@@ -12,7 +12,8 @@ const fs = require('fs');
 const path = require('path');
 const ExifReader = require('exifreader');
 
-const IMAGES_DIR = './images';
+const IMAGES_DIR = 'images';
+const MOBILE_IMAGES_DIR = 'images-mobile';
 const OUTPUT_FILE = './images-manifest.json';
 
 // Supported image extensions
@@ -146,8 +147,13 @@ async function scanDirectory(dir, category = null) {
         const title = metadataDescription || generateTitleFromFilename(item);
         const hasMetadata = !!metadataDescription;
         
+        // Check for mobile version
+        const mobilePath = fullPath.replace(IMAGES_DIR, MOBILE_IMAGES_DIR);
+        const hasMobile = fs.existsSync(mobilePath);
+        
         images.push({
           src: fullPath.replace(/\\/g, '/'), // Normalize path separators
+          srcMobile: hasMobile ? mobilePath.replace(/\\/g, '/') : null,
           filename: item,
           title: title,
           titleSource: hasMetadata ? 'metadata' : 'filename',
@@ -158,10 +164,12 @@ async function scanDirectory(dir, category = null) {
         
       } else if (ext === '.svg') {
         // SVG files don't have EXIF metadata, use filename
+        // SVGs are vector, no need for mobile version
         const title = generateTitleFromFilename(item);
         
         images.push({
           src: fullPath.replace(/\\/g, '/'),
+          srcMobile: null,
           filename: item,
           title: title,
           titleSource: 'filename',
@@ -195,12 +203,14 @@ async function main() {
   // Count metadata vs filename titles
   const metadataCount = images.filter(img => img.titleSource === 'metadata').length;
   const filenameCount = images.filter(img => img.titleSource === 'filename').length;
+  const mobileCount = images.filter(img => img.srcMobile !== null).length;
 
   const manifest = {
     generated: new Date().toISOString(),
     totalImages: images.length,
     titlesFromMetadata: metadataCount,
     titlesFromFilename: filenameCount,
+    mobileVersions: mobileCount,
     categories: categories.map(cat => ({
       id: cat,
       name: CATEGORY_NAMES[cat] || cat
@@ -224,6 +234,12 @@ async function main() {
   console.log(`\n📝 Title sources:`);
   console.log(`   • From metadata: ${metadataCount} images`);
   console.log(`   • From filename: ${filenameCount} images`);
+  
+  console.log(`\n📱 Mobile versions:`);
+  console.log(`   • ${mobileCount} of ${images.length} images have mobile versions`);
+  if (mobileCount < images.length) {
+    console.log(`   • Add low-res images to ${MOBILE_IMAGES_DIR}/ to optimize for mobile`);
+  }
   
   // Show which images have metadata descriptions
   if (metadataCount > 0) {

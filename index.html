@@ -74,6 +74,17 @@
         let filteredImages = [];
         let currentFilter = 'all';
         let currentIndex = 0;
+        
+        // Check if mobile (under 600px)
+        const isMobile = () => window.innerWidth < 600;
+        
+        // Get appropriate image source (mobile or full)
+        const getImageSrc = (img) => {
+            if (isMobile() && img.srcMobile) {
+                return img.srcMobile;
+            }
+            return img.src;
+        };
 
         // DOM Elements
         const gallery = document.getElementById('gallery');
@@ -163,7 +174,7 @@
 
             gallery.innerHTML = filteredImages.map((img, index) => `
                 <div class="gallery-item" data-index="${index}" style="animation-delay: ${index * 0.05}s">
-                    <img src="${img.src}" alt="${img.title}" loading="lazy">
+                    <img src="${getImageSrc(img)}" alt="${img.title}" loading="lazy">
                     <div class="overlay">
                         <p class="title">${img.title}</p>
                         <p class="category-tag">${img.categoryName}</p>
@@ -194,7 +205,7 @@
 
         function updateSlideshow() {
             const img = filteredImages[currentIndex];
-            modalImage.src = img.src;
+            modalImage.src = getImageSrc(img);
             modalImage.alt = img.title;
             modalTitle.textContent = img.title;
             modalCategory.textContent = img.categoryName;

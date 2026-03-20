@@ -1,8 +1,8 @@
 {
-  "generated": "2026-03-20T03:37:24.411Z",
+  "generated": "2026-03-20T03:45:05.081Z",
   "totalImages": 53,
-  "titlesFromMetadata": 38,
-  "titlesFromFilename": 15,
+  "titlesFromMetadata": 39,
+  "titlesFromFilename": 14,
   "categories": [
     {
       "id": "ads",
@@ -249,8 +249,8 @@
     {
       "src": "images/fonts/fireTest.jpg",
       "filename": "fireTest.jpg",
-      "title": "FireTest",
-      "titleSource": "filename",
+      "title": "Font developed for annual \"Dancing til Dusk\" music festival in downtown Seattle",
+      "titleSource": "metadata",
       "category": "fonts",
       "categoryName": "Fonts",
       "extension": ".jpg"

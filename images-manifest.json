@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-20T19:04:25.492Z",
+  "generated": "2026-03-21T03:52:49.785Z",
   "totalImages": 59,
-  "titlesFromMetadata": 38,
-  "titlesFromFilename": 21,
-  "mobileVersions": 7,
+  "titlesFromMetadata": 34,
+  "titlesFromFilename": 25,
+  "mobileVersions": 17,
   "categories": [
     {
       "id": "ads",
@@ -42,20 +42,20 @@
       "extension": ".svg"
     },
     {
-      "src": "images/ads/aaos.jpg",
-      "srcMobile": null,
-      "filename": "aaos.jpg",
-      "title": "Public Service Announcement ad campaign for the American Association of Orthopaedic Surgeons.",
-      "titleSource": "metadata",
+      "src": "images/ads/AAOSAds.jpg",
+      "srcMobile": "images-mobile/ads/AAOSAds.jpg",
+      "filename": "AAOSAds.jpg",
+      "title": "AAOSAds",
+      "titleSource": "filename",
       "category": "ads",
       "categoryName": "Advertising",
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/BetsyShoesx800.jpg",
-      "srcMobile": null,
-      "filename": "BetsyShoesx800.jpg",
-      "title": "Bus shelter for Betsy Fisher featuring shoes. Ad was based on broach with shoes picked to match.",
+      "src": "images/ads/BetsyShoes.jpg",
+      "srcMobile": "images-mobile/ads/BetsyShoes.jpg",
+      "filename": "BetsyShoes.jpg",
+      "title": "Bus shelter for Betsy Fisher featuring shoes. Art direction of photo shoot was based on broach with shoes picked to match.",
       "titleSource": "metadata",
       "category": "ads",
       "categoryName": "Advertising",
@@ -63,7 +63,7 @@
     },
     {
       "src": "images/ads/certiPUR_ads.jpg",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/ads/certiPUR_ads.jpg",
       "filename": "certiPUR_ads.jpg",
       "title": "Brochure, ads and social media promoting non-profit CertiPUR-US flexible poluyurethane foam certification.",
       "titleSource": "metadata",
@@ -73,7 +73,7 @@
     },
     {
       "src": "images/ads/meydenbauer.jpg",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/ads/meydenbauer.jpg",
       "filename": "meydenbauer.jpg",
       "title": "Ad campaign for Meydenbauer Convention Center in suburbs outside Seattle, WA.",
       "titleSource": "metadata",
@@ -82,9 +82,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/PosterBetsyFisherBusShelterx1200.jpg",
-      "srcMobile": null,
-      "filename": "PosterBetsyFisherBusShelterx1200.jpg",
+      "src": "images/ads/PosterBetsyFisherBusShelter.jpg",
+      "srcMobile": "images-mobile/ads/PosterBetsyFisherBusShelter.jpg",
+      "filename": "PosterBetsyFisherBusShelter.jpg",
       "title": "Betsy Fisher bus shelter; shoe shot without foot so foot was illustrated.",
       "titleSource": "metadata",
       "category": "ads",
@@ -92,9 +92,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/RonaldMcDonaldBullying3.jpg",
-      "srcMobile": null,
-      "filename": "RonaldMcDonaldBullying3.jpg",
+      "src": "images/ads/RonaldMcDonaldBullying.jpg",
+      "srcMobile": "images-mobile/ads/RonaldMcDonaldBullying.jpg",
+      "filename": "RonaldMcDonaldBullying.jpg",
       "title": "Experimental comp for a McDonalds anti-bullying ad.",
       "titleSource": "metadata",
       "category": "ads",
@@ -103,7 +103,7 @@
     },
     {
       "src": "images/ads/WashAutoShow22.jpg",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/ads/WashAutoShow22.jpg",
       "filename": "WashAutoShow22.jpg",
       "title": "Brochure, ad and social media campaign for Washington Auto Show.",
       "titleSource": "metadata",
@@ -112,29 +112,29 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/weta.jpg",
-      "srcMobile": null,
-      "filename": "weta.jpg",
-      "title": "Bus shelter, bus sign and bus interior poster campaign for WETA-FM.",
-      "titleSource": "metadata",
+      "src": "images/ads/WETA_FM.jpg",
+      "srcMobile": "images-mobile/ads/WETA_FM.jpg",
+      "filename": "WETA_FM.jpg",
+      "title": "WETA FM",
+      "titleSource": "filename",
       "category": "ads",
       "categoryName": "Advertising",
       "extension": ".jpg"
     },
     {
       "src": "images/ads/Whole_World's_Against_You_v4.jpg",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/ads/Whole_World's_Against_You_v4.jpg",
       "filename": "Whole_World's_Against_You_v4.jpg",
-      "title": "Experimental mental health ad.",
-      "titleSource": "metadata",
+      "title": "Whole World'S Against You",
+      "titleSource": "filename",
       "category": "ads",
       "categoryName": "Advertising",
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/you-can-swim-right_v2x800.jpg",
-      "srcMobile": null,
-      "filename": "you-can-swim-right_v2x800.jpg",
+      "src": "images/ads/you-can-swim-right.jpg",
+      "srcMobile": "images-mobile/ads/you-can-swim-right.jpg",
+      "filename": "you-can-swim-right.jpg",
       "title": "Sketch for experimental mental health ad.",
       "titleSource": "metadata",
       "category": "ads",
@@ -202,11 +202,11 @@
       "extension": ".gif"
     },
     {
-      "src": "images/design/holesposter.jpg",
+      "src": "images/design/HolesPosterFinal.jpg",
       "srcMobile": null,
-      "filename": "holesposter.jpg",
-      "title": "Poster concept for play \"Holes\" at Seattle Children's Theater.",
-      "titleSource": "metadata",
+      "filename": "HolesPosterFinal.jpg",
+      "title": "HolesPosterFinal",
+      "titleSource": "filename",
       "category": "design",
       "categoryName": "Design",
       "extension": ".jpg"

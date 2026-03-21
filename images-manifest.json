@@ -1,5 +1,5 @@
 {
-  "generated": "2026-03-21T12:18:54.678Z",
+  "generated": "2026-03-21T12:33:51.593Z",
   "totalImages": 54,
   "titlesFromMetadata": 30,
   "titlesFromFilename": 24,
@@ -332,9 +332,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/Alt-Another-Bike-Poster-6-rev.jpg",
+      "src": "images/illust/Another-Bike-Poster.jpg",
       "srcMobile": null,
-      "filename": "Alt-Another-Bike-Poster-6-rev.jpg",
+      "filename": "Another-Bike-Poster.jpg",
       "title": "Concept poster for Sea Gull Century bike ride",
       "titleSource": "metadata",
       "category": "illust",
@@ -342,19 +342,19 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/AprilGreiman8.jpg",
+      "src": "images/illust/AprilGreiman.jpg",
       "srcMobile": null,
-      "filename": "AprilGreiman8.jpg",
-      "title": "AprilGreiman8",
+      "filename": "AprilGreiman.jpg",
+      "title": "AprilGreiman",
       "titleSource": "filename",
       "category": "illust",
       "categoryName": "Illustration",
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/Back-to-Future-Bannerv3x1200.jpg",
+      "src": "images/illust/Back-to-Future-Banner.jpg",
       "srcMobile": null,
-      "filename": "Back-to-Future-Bannerv3x1200.jpg",
+      "filename": "Back-to-Future-Banner.jpg",
       "title": "Back To Future Banner",
       "titleSource": "filename",
       "category": "illust",
@@ -382,9 +382,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/Mask4.jpg",
+      "src": "images/illust/Mask.jpg",
       "srcMobile": null,
-      "filename": "Mask4.jpg",
+      "filename": "Mask.jpg",
       "title": "Mardi Gras mask illustration",
       "titleSource": "metadata",
       "category": "illust",
@@ -395,7 +395,7 @@
       "src": "images/illust/owl.jpg",
       "srcMobile": null,
       "filename": "owl.jpg",
-      "title": "Owl logo illustration",
+      "title": "Owl icon illustration",
       "titleSource": "metadata",
       "category": "illust",
       "categoryName": "Illustration",

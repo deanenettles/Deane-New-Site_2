@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-21T04:13:23.236Z",
+  "generated": "2026-03-21T12:18:54.678Z",
   "totalImages": 54,
   "titlesFromMetadata": 30,
   "titlesFromFilename": 24,
-  "mobileVersions": 16,
+  "mobileVersions": 18,
   "categories": [
     {
       "id": "ads",
@@ -102,9 +102,19 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/WashAutoShow22.jpg",
-      "srcMobile": "images-mobile/ads/WashAutoShow22.jpg",
-      "filename": "WashAutoShow22.jpg",
+      "src": "images/ads/WAS_car_wrap.jpg",
+      "srcMobile": null,
+      "filename": "WAS_car_wrap.jpg",
+      "title": "Car wrap designed for the Washington Auto Show",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/WASAutoShow.jpg",
+      "srcMobile": "images-mobile/ads/WASAutoShow.jpg",
+      "filename": "WASAutoShow.jpg",
       "title": "Brochure, ad and social media campaign for Washington Auto Show.",
       "titleSource": "metadata",
       "category": "ads",
@@ -143,7 +153,7 @@
     },
     {
       "src": "images/design/ATP-Sales-Packet-DR3-1v32.gif",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/design/ATP-Sales-Packet-DR3-1v32.gif",
       "filename": "ATP-Sales-Packet-DR3-1v32.gif",
       "title": "ATP Sales Packet DR3 1",
       "titleSource": "filename",
@@ -152,9 +162,9 @@
       "extension": ".gif"
     },
     {
-      "src": "images/design/BrochArtToDineForx1200.jpg",
+      "src": "images/design/BrochArtToDineFor.jpg",
       "srcMobile": null,
-      "filename": "BrochArtToDineForx1200.jpg",
+      "filename": "BrochArtToDineFor.jpg",
       "title": "Creative Alliance \"Art to Dine For\" booklet, outlining dining events in Baltimore. Design and illustration.",
       "titleSource": "metadata",
       "category": "design",
@@ -182,9 +192,9 @@
       "extension": ".png"
     },
     {
-      "src": "images/design/DTD_Poster_2023_v4_portfolio.jpg",
+      "src": "images/design/DTD_Poster_2023.jpg",
       "srcMobile": null,
-      "filename": "DTD_Poster_2023_v4_portfolio.jpg",
+      "filename": "DTD_Poster_2023.jpg",
       "title": "Poster for Dancing Til Dusk, dance instruction and dances in the summer in downtown Seattle parks, now in its  18th year. (2025)",
       "titleSource": "metadata",
       "category": "design",
@@ -193,7 +203,7 @@
     },
     {
       "src": "images/design/FMCS.gif",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/design/FMCS.gif",
       "filename": "FMCS.gif",
       "title": "FMCS",
       "titleSource": "filename",
@@ -202,10 +212,10 @@
       "extension": ".gif"
     },
     {
-      "src": "images/design/HolesPosterFinal.jpg",
+      "src": "images/design/HolesPoster.jpg",
       "srcMobile": null,
-      "filename": "HolesPosterFinal.jpg",
-      "title": "HolesPosterFinal",
+      "filename": "HolesPoster.jpg",
+      "title": "HolesPoster",
       "titleSource": "filename",
       "category": "design",
       "categoryName": "Design",
@@ -222,9 +232,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/design/NatGeoChina2x1200.jpg",
+      "src": "images/design/NatGeoChina.jpg",
       "srcMobile": null,
-      "filename": "NatGeoChina2x1200.jpg",
+      "filename": "NatGeoChina.jpg",
       "title": "Magazine sales brochure for Terra Cotta Warriors exhibit",
       "titleSource": "metadata",
       "category": "design",
@@ -232,9 +242,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/design/PolishEmbassyBannerFinal.jpg",
+      "src": "images/design/PolishEmbassyBanner.jpg",
       "srcMobile": null,
-      "filename": "PolishEmbassyBannerFinal.jpg",
+      "filename": "PolishEmbassyBanner.jpg",
       "title": "Stand-up banner for use by the Polish Embassy at exhibits, events and presentations.",
       "titleSource": "metadata",
       "category": "design",
@@ -246,16 +256,6 @@
       "srcMobile": null,
       "filename": "TTGPocketFolder.jpg",
       "title": "Pocket folder and inserts for Technology Trends Group, a technology installation company in Washington, DC",
-      "titleSource": "metadata",
-      "category": "design",
-      "categoryName": "Design",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/design/WAS_car_wrap_2019.jpg",
-      "srcMobile": null,
-      "filename": "WAS_car_wrap_2019.jpg",
-      "title": "Car wrap designed for the Washington Auto Show",
       "titleSource": "metadata",
       "category": "design",
       "categoryName": "Design",

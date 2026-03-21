@@ -21,6 +21,7 @@
         body {
             font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-primary);
+            background-color:#ccc;
             color: var(--text-primary);
             min-height: 100vh;
             line-height: 1.6;

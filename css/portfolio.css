@@ -215,6 +215,8 @@
             letter-spacing: 0.05em;
         }
 
+        .category-tag {color:#aaa!important;}
+
         /* Loading State */
         .loading {
             text-align: center;

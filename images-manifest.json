@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-21T04:06:27.238Z",
+  "generated": "2026-03-21T04:13:23.236Z",
   "totalImages": 54,
   "titlesFromMetadata": 30,
   "titlesFromFilename": 24,
-  "mobileVersions": 17,
+  "mobileVersions": 16,
   "categories": [
     {
       "id": "ads",
@@ -52,9 +52,19 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/BetsyShoes.jpg",
-      "srcMobile": "images-mobile/ads/BetsyShoes.jpg",
-      "filename": "BetsyShoes.jpg",
+      "src": "images/ads/BetsyFisherRiseShine.jpg",
+      "srcMobile": "images-mobile/ads/BetsyFisherRiseShine.jpg",
+      "filename": "BetsyFisherRiseShine.jpg",
+      "title": "Betsy Fisher bus shelter; shoe shot without foot so foot was illustrated.",
+      "titleSource": "metadata",
+      "category": "ads",
+      "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/ads/BetsyFlowerShoes.jpg",
+      "srcMobile": null,
+      "filename": "BetsyFlowerShoes.jpg",
       "title": "Bus shelter for Betsy Fisher featuring shoes. Art direction of photo shoot was based on broach with shoes picked to match.",
       "titleSource": "metadata",
       "category": "ads",
@@ -76,16 +86,6 @@
       "srcMobile": "images-mobile/ads/meydenbauer.jpg",
       "filename": "meydenbauer.jpg",
       "title": "Ad campaign for Meydenbauer Convention Center in suburbs outside Seattle, WA.",
-      "titleSource": "metadata",
-      "category": "ads",
-      "categoryName": "Advertising",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/ads/PosterBetsyFisherBusShelter.jpg",
-      "srcMobile": "images-mobile/ads/PosterBetsyFisherBusShelter.jpg",
-      "filename": "PosterBetsyFisherBusShelter.jpg",
-      "title": "Betsy Fisher bus shelter; shoe shot without foot so foot was illustrated.",
       "titleSource": "metadata",
       "category": "ads",
       "categoryName": "Advertising",
@@ -122,9 +122,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/Whole_World's_Against_You_v4.jpg",
-      "srcMobile": "images-mobile/ads/Whole_World's_Against_You_v4.jpg",
-      "filename": "Whole_World's_Against_You_v4.jpg",
+      "src": "images/ads/Whole_World's_Against_You.jpg",
+      "srcMobile": "images-mobile/ads/Whole_World's_Against_You.jpg",
+      "filename": "Whole_World's_Against_You.jpg",
       "title": "Whole World'S Against You",
       "titleSource": "filename",
       "category": "ads",

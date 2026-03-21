@@ -1,13 +1,17 @@
 {
-  "generated": "2026-03-21T16:03:37.353Z",
+  "generated": "2026-03-21T16:46:18.936Z",
   "totalImages": 54,
-  "titlesFromMetadata": 36,
-  "titlesFromFilename": 18,
-  "mobileVersions": 20,
+  "titlesFromMetadata": 35,
+  "titlesFromFilename": 19,
+  "mobileVersions": 26,
   "categories": [
     {
       "id": "ads",
       "name": "Advertising"
+    },
+    {
+      "id": "pubs",
+      "name": "Publications"
     },
     {
       "id": "design",
@@ -24,23 +28,9 @@
     {
       "id": "logos",
       "name": "Logo Design"
-    },
-    {
-      "id": "pubs",
-      "name": "Publications"
     }
   ],
   "images": [
-    {
-      "src": "images/nettle.svg",
-      "srcMobile": null,
-      "filename": "nettle.svg",
-      "title": "Nettle",
-      "titleSource": "filename",
-      "category": null,
-      "categoryName": "Uncategorized",
-      "extension": ".svg"
-    },
     {
       "src": "images/ads/AAOSAds.jpg",
       "srcMobile": "images-mobile/ads/AAOSAds.jpg",
@@ -149,6 +139,66 @@
       "titleSource": "metadata",
       "category": "ads",
       "categoryName": "Advertising",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/AS77_Cover1NEW.jpg",
+      "srcMobile": "images-mobile/pubs/AS77_Cover1NEW.jpg",
+      "filename": "AS77_Cover1NEW.jpg",
+      "title": "American Style Fall Arts Preview cover art direction",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/AS78_Pg66-67.jpg",
+      "srcMobile": "images-mobile/pubs/AS78_Pg66-67.jpg",
+      "filename": "AS78_Pg66-67.jpg",
+      "title": "American Style article art direction, All Creatures Great & Small article",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/photomedia_covers.jpg",
+      "srcMobile": "images-mobile/pubs/photomedia_covers.jpg",
+      "filename": "photomedia_covers.jpg",
+      "title": "Photomedia Covers",
+      "titleSource": "filename",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/photomedia_inHarmsWay.jpg",
+      "srcMobile": "images-mobile/pubs/photomedia_inHarmsWay.jpg",
+      "filename": "photomedia_inHarmsWay.jpg",
+      "title": "Spread on photojournalism for PhotoMedia",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/ReneeRussoSpread.jpg",
+      "srcMobile": "images-mobile/pubs/ReneeRussoSpread.jpg",
+      "filename": "ReneeRussoSpread.jpg",
+      "title": "Greg Gorman spread from PhotoMedia magazine",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/pubs/Safari.jpg",
+      "srcMobile": "images-mobile/pubs/Safari.jpg",
+      "filename": "Safari.jpg",
+      "title": "PhotoMedia spread design",
+      "titleSource": "metadata",
+      "category": "pubs",
+      "categoryName": "Publications",
       "extension": ".jpg"
     },
     {
@@ -512,64 +562,14 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/pubs/AS77_Cover1NEW.jpg",
+      "src": "images/nettle.svg",
       "srcMobile": null,
-      "filename": "AS77_Cover1NEW.jpg",
-      "title": "American Style Fall Arts Preview cover design",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/AS78_Pg66-67.jpg",
-      "srcMobile": null,
-      "filename": "AS78_Pg66-67.jpg",
-      "title": "American Style article design and production",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/photomedia_covers.jpg",
-      "srcMobile": null,
-      "filename": "photomedia_covers.jpg",
-      "title": "PhotoMedia magazine cover designs",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/photomedia_inHarmsWay.jpg",
-      "srcMobile": null,
-      "filename": "photomedia_inHarmsWay.jpg",
-      "title": "Spread on photojournalism for PhotoMedia",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/ReneeRussoSpread.jpg",
-      "srcMobile": null,
-      "filename": "ReneeRussoSpread.jpg",
-      "title": "Greg Gorman spread from PhotoMedia magazine",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/Safari.jpg",
-      "srcMobile": null,
-      "filename": "Safari.jpg",
-      "title": "PhotoMedia spread design",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
+      "filename": "nettle.svg",
+      "title": "Nettle",
+      "titleSource": "filename",
+      "category": null,
+      "categoryName": "Uncategorized",
+      "extension": ".svg"
     }
   ]
 }

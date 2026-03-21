@@ -20,14 +20,14 @@ const OUTPUT_FILE = './images-manifest.json';
 const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 // Note: SVG doesn't have EXIF metadata, handled separately
 
-// Human-readable category names
+// Human-readable category names (order determines navigation order)
 const CATEGORY_NAMES = {
   'ads': 'Advertising',
-  'apubs': 'Publications'
+  'pubs': 'Publications',
   'design': 'Design',
   'fonts': 'Fonts',
   'illust': 'Illustration',
-  'logos': 'Logo Design',
+  'logos': 'Logo Design'
 };
 
 /**
@@ -188,16 +188,27 @@ async function main() {
   
   const images = await scanDirectory(IMAGES_DIR);
   
-  // Sort by category, then by filename
+  // Sort by category (using CATEGORY_NAMES order), then by filename
+  const categoryOrder = Object.keys(CATEGORY_NAMES);
   images.sort((a, b) => {
     if (a.category !== b.category) {
-      return (a.category || '').localeCompare(b.category || '');
+      const aIndex = categoryOrder.indexOf(a.category);
+      const bIndex = categoryOrder.indexOf(b.category);
+      // Put unknown categories at the end
+      const aOrder = aIndex === -1 ? 999 : aIndex;
+      const bOrder = bIndex === -1 ? 999 : bIndex;
+      return aOrder - bOrder;
     }
     return a.filename.localeCompare(b.filename);
   });
 
-  // Get unique categories
-  const categories = [...new Set(images.map(img => img.category).filter(Boolean))];
+  // Get unique categories, sorted by CATEGORY_NAMES order
+  const categories = [...new Set(images.map(img => img.category).filter(Boolean))]
+    .sort((a, b) => {
+      const aIndex = categoryOrder.indexOf(a);
+      const bIndex = categoryOrder.indexOf(b);
+      return (aIndex === -1 ? 999 : aIndex) - (bIndex === -1 ? 999 : bIndex);
+    });
 
   // Count metadata vs filename titles
   const metadataCount = images.filter(img => img.titleSource === 'metadata').length;

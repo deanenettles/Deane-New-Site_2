@@ -95,7 +95,9 @@
         .filter-buttons {
             display: flex;
             flex-wrap: wrap;
+            justify-content:center;
             gap: 0.5rem;
+
         }
 
         .filter-btn, .footer-btn {

@@ -1,8 +1,8 @@
 {
-  "generated": "2026-03-21T03:52:49.785Z",
-  "totalImages": 59,
-  "titlesFromMetadata": 34,
-  "titlesFromFilename": 25,
+  "generated": "2026-03-21T04:06:27.238Z",
+  "totalImages": 54,
+  "titlesFromMetadata": 30,
+  "titlesFromFilename": 24,
   "mobileVersions": 17,
   "categories": [
     {
@@ -242,16 +242,6 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/design/TardiGras.jpg",
-      "srcMobile": null,
-      "filename": "TardiGras.jpg",
-      "title": "Poster for \"Tardi Gras\" (post-Mardi Gras) event with the D.C. band Wild Anacostias",
-      "titleSource": "metadata",
-      "category": "design",
-      "categoryName": "Design",
-      "extension": ".jpg"
-    },
-    {
       "src": "images/design/TTGPocketFolder.jpg",
       "srcMobile": null,
       "filename": "TTGPocketFolder.jpg",
@@ -372,16 +362,6 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/bicyclistx1200.jpg",
-      "srcMobile": null,
-      "filename": "bicyclistx1200.jpg",
-      "title": "Illustration of bicyclist",
-      "titleSource": "metadata",
-      "category": "illust",
-      "categoryName": "Illustration",
-      "extension": ".jpg"
-    },
-    {
       "src": "images/illust/eagle.jpg",
       "srcMobile": null,
       "filename": "eagle.jpg",
@@ -432,19 +412,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/illust/Rocketx1200.jpg",
+      "src": "images/illust/StopThinkConnect.jpg",
       "srcMobile": null,
-      "filename": "Rocketx1200.jpg",
-      "title": "3D spacecraft created in Illustrator",
-      "titleSource": "metadata",
-      "category": "illust",
-      "categoryName": "Illustration",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/illust/StopThinkConnectv5.6x1200.jpg",
-      "srcMobile": null,
-      "filename": "StopThinkConnectv5.6x1200.jpg",
+      "filename": "StopThinkConnect.jpg",
       "title": "Think before you click poster",
       "titleSource": "metadata",
       "category": "illust",
@@ -492,30 +462,10 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/logos/CDC-Logo.jpg",
-      "srcMobile": null,
-      "filename": "CDC-Logo.jpg",
-      "title": "CDC Logo",
-      "titleSource": "filename",
-      "category": "logos",
-      "categoryName": "Logo Design",
-      "extension": ".jpg"
-    },
-    {
       "src": "images/logos/Creative-Coffeehouse.jpg",
       "srcMobile": null,
       "filename": "Creative-Coffeehouse.jpg",
       "title": "Creative Coffeehouse",
-      "titleSource": "filename",
-      "category": "logos",
-      "categoryName": "Logo Design",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/logos/IDiReservex1200.jpg",
-      "srcMobile": null,
-      "filename": "IDiReservex1200.jpg",
-      "title": "IDiReserve",
       "titleSource": "filename",
       "category": "logos",
       "categoryName": "Logo Design",
@@ -530,6 +480,16 @@
       "category": "logos",
       "categoryName": "Logo Design",
       "extension": ".gif"
+    },
+    {
+      "src": "images/logos/iReserve.jpg",
+      "srcMobile": null,
+      "filename": "iReserve.jpg",
+      "title": "IReserve",
+      "titleSource": "filename",
+      "category": "logos",
+      "categoryName": "Logo Design",
+      "extension": ".jpg"
     },
     {
       "src": "images/logos/RhythmRootsLogo.jpg",
@@ -562,9 +522,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/pubs/AS78_Pg66-67x1200.jpg",
+      "src": "images/pubs/AS78_Pg66-67.jpg",
       "srcMobile": null,
-      "filename": "AS78_Pg66-67x1200.jpg",
+      "filename": "AS78_Pg66-67.jpg",
       "title": "American Style article design and production",
       "titleSource": "metadata",
       "category": "pubs",
@@ -592,9 +552,9 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/pubs/ReneeRussoSpreadx2000.jpg",
+      "src": "images/pubs/ReneeRussoSpread.jpg",
       "srcMobile": null,
-      "filename": "ReneeRussoSpreadx2000.jpg",
+      "filename": "ReneeRussoSpread.jpg",
       "title": "Greg Gorman spread from PhotoMedia magazine",
       "titleSource": "metadata",
       "category": "pubs",
@@ -602,20 +562,10 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/pubs/Safarix1200.jpg",
+      "src": "images/pubs/Safari.jpg",
       "srcMobile": null,
-      "filename": "Safarix1200.jpg",
+      "filename": "Safari.jpg",
       "title": "PhotoMedia spread design",
-      "titleSource": "metadata",
-      "category": "pubs",
-      "categoryName": "Publications",
-      "extension": ".jpg"
-    },
-    {
-      "src": "images/pubs/urbanite_concept.jpg",
-      "srcMobile": null,
-      "filename": "urbanite_concept.jpg",
-      "title": "Concept spread design and illustration, Urbanite, Ideas That Could Change Baltimore",
       "titleSource": "metadata",
       "category": "pubs",
       "categoryName": "Publications",

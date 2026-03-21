@@ -23,12 +23,11 @@ const IMAGE_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
 // Human-readable category names
 const CATEGORY_NAMES = {
   'ads': 'Advertising',
+  'apubs': 'Publications'
   'design': 'Design',
   'fonts': 'Fonts',
   'illust': 'Illustration',
   'logos': 'Logo Design',
-  'pubs': 'Publications'
-
 };
 
 /**

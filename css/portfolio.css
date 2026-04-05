@@ -132,10 +132,10 @@
             font-size: 0.875rem;
             font-weight: 500;
             transition: var(--transition);
-            transition-property: background, border-color, color, box-shadow;
+            transition-property: background-color, border-color, color, box-shadow;
         }
 
-        .footer-btn {margin:.5rem 0;}
+        .footer-btn {margin:.5rem 0; line-height:3rem;}
 
         .filter-btn:hover, .footer-btn:hover
  {

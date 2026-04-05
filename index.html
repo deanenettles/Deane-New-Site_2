@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="css/portfolio.css" rel="stylesheet">
     <style>
-
+    /* Additional styles for loading and error states */
     </style>
 </head>
 <body>
@@ -30,7 +30,7 @@
         </div>
         <div class="nav-links">
             <a href="about.html" class="nav-link">About</a>
-            <a href="contact.php" class="nav-link">Contact</a>
+            <a href="mailto:deane@deanenettles.com" class="nav-link">Contact</a>
         </div>
     </nav>
 
@@ -44,31 +44,30 @@
     </main>
 
     <div class="modal" id="slideshow">
-        <button class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
-        <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous">&#10094;</button>
+        <button type="button" class="close-btn" id="closeBtn" aria-label="Close">&times;</button>
+        <button type="button" class="nav-btn prev-btn" id="prevBtn" aria-label="Previous">&#10094;</button>
         <div class="modal-content">
             <img class="modal-image" id="modalImage" src="" alt="">
             <div class="modal-info">
-                <h2 class="modal-title" id="modalTitle"></h2>
+                <h2 class="modal-title" id="modalTitle">&nbsp;</h2>
                 <p class="modal-category" id="modalCategory"></p>
                 <p class="image-counter" id="imageCounter"></p>
             </div>
         </div>
-        <button class="nav-btn next-btn" id="nextBtn" aria-label="Next">&#10095;</button>
+        <button type="button" class="nav-btn next-btn" id="nextBtn" aria-label="Next">&#10095;</button>
     </div>
 
     <footer>
         <p>
-            <button class="footer-btn"><a href="index.html">Home</a></button>
-            <button class="footer-btn"><a href="about.html">About</a></button>
-            <button class="footer-btn"><a href="resume.html">Resume</a></button>
-            <button class="footer-btn"><a href="contact.php">Contact</a></button>
-            <button class="footer-btn"><a href="charcoal.html" target="_blank">Charcoal</a></button>
-            <button class="footer-btn"><a href="paintings.html" target="_blank">Paintings</a></button>
-            <button class="footer-btn"><a href="training.html" target="_blank">Training</a></button>
-            <button class="footer-btn"><a href="historyofdesign.html" target="_blank">History of Design</a></button>
-            <button class="footer-btn"><a href="https://www.baltimoreindustrytours.com" target="_blank">Baltimore Industry Tours</a></button>
-            <button class="footer-btn"><a href="https://www.deanenettles.com/baltimorebauhaus" target="_blank">Baltimore Bauhaus</a></button>
+            <a href="index.html" class="footer-btn">Home</a>
+            <a href="about.html" class="footer-btn">About</a>
+            <a href="contact.php" class="footer-btn">Contact</a>
+            <a href="charcoal.html" class="footer-btn" target="_blank">Charcoal</a>
+            <a href="paintings.html" class="footer-btn" target="_blank">Paintings</a>
+            <a href="training.html" class="footer-btn" target="_blank">Training</a>
+            <a href="historyofdesign.html" class="footer-btn" target="_blank">History of Design</a>
+            <a href="https://www.baltimoreindustrytours.com" class="footer-btn" target="_blank">Baltimore Industry Tours</a>
+            <a href="https://www.deanenettles.com/baltimorebauhaus" class="footer-btn" target="_blank">Baltimore Bauhaus</a>
         </p>
         <p class="copy">&copy; 2026 Deane Nettles. All rights reserved.</p>
     </footer>

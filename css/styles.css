@@ -1,7 +1,12 @@
 @charset "UTF-8";
 /* STRUCTURE */
 
-* {margin:0; padding:0; box-sizing:border-box; }
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 html {font-size:62.5%; -webkit-text-size-adjust: 100%; line-height:1.6;}
 body {background-color:black; font-family:verdana, arial, sans-serif;}
 footer {background-color:black; color:white; }
@@ -18,7 +23,7 @@ h1 {font-size:2.4rem;}
 h2 {font-size:2.0rem;}
 h3 {font-size:1.8rem;}
 p, ul, ol, h4 {font-size:1.6rem;}
-footer p {font-size:1.2rem; color:#ccc;}
+footer p {font-size:1.2rem; color:#ccc; line-height:3rem;}
 main h1, main p {margin:20px;}
 main p {margin:00 0 40px 0;}
 main h1, main h2 {line-height:1.2;}
@@ -36,8 +41,6 @@ header nav a:hover, header nav a:focus {color:white;}
 a:link.findme, a:visited.findme {color:white; font-weight:bold; font-style:normal;}
 a:hover.findme, a:focus.findme {background-color:rgba(0,0,0,0.5)}
 .findme {background-color: #c41230; text-align:center; padding:10px 20px;}
-
-
 footer a:link, footer a:visited {text-decoration:none; color:skyblue; font-style:normal;}
 footer a:hover, footer a:focus {color:white;}
 
@@ -162,7 +165,7 @@ footer a:hover, footer a:focus {color:white;}
 	h2 {font-size:1.5rem;}
 	p {font-size:1.4rem;}
 	footer p {font-size:1.0rem; }
-	footer p.links {line-height:2;}
+	footer p.links {line-height:3;}
 	
 }
 

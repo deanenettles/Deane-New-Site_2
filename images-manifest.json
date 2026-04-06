@@ -1,9 +1,9 @@
 {
-  "generated": "2026-03-21T17:07:38.849Z",
-  "totalImages": 53,
+  "generated": "2026-04-05T17:50:27.176Z",
+  "totalImages": 54,
   "titlesFromMetadata": 34,
-  "titlesFromFilename": 19,
-  "mobileVersions": 25,
+  "titlesFromFilename": 20,
+  "mobileVersions": 26,
   "categories": [
     {
       "id": "ads",
@@ -402,6 +402,16 @@
       "extension": ".jpg"
     },
     {
+      "src": "images/illust/diversityposter.jpg",
+      "srcMobile": "images-mobile/illust/diversityposter.jpg",
+      "filename": "diversityposter.jpg",
+      "title": "Diversityposter",
+      "titleSource": "filename",
+      "category": "illust",
+      "categoryName": "Illustration",
+      "extension": ".jpg"
+    },
+    {
       "src": "images/illust/eagle.jpg",
       "srcMobile": null,
       "filename": "eagle.jpg",
@@ -475,7 +485,7 @@
       "src": "images/logos/adaptivemethods.jpg",
       "srcMobile": null,
       "filename": "adaptivemethods.jpg",
-      "title": "Logo for engineering firm that works with the U.S. Navy",
+      "title": "Adaptive Methods logo, engineering firm that adapts consumer electronics for Defense uses",
       "titleSource": "metadata",
       "category": "logos",
       "categoryName": "Logo Design",

@@ -170,8 +170,26 @@ $csrfToken = generateCsrfToken();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/ocs.css">
+  <link rel="stylesheet" href="css/styles.css">
+
   <style>
+body {background-color:#ccc;}
+
+/* FORMS */
+input, textarea {display:block; width:100%;}
+
+input, textarea, select, button {margin-bottom:.5rem; border:.06rem solid #aaa; padding:.5rem; border-radius:.25rem;}
+
+textarea {margin-bottom:1rem;}
+
+.hilight {font-size:small; color:oklch(0.459 0.184 6.94); margin-top:0;}
+
+button[type=submit] {background-color:oklch(0.459 0.184 6.94); color:white;}
+
+button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
+
+button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#ccc; } 
+
     .form-message {
       padding: 15px;
       margin: 20px 0;
@@ -200,29 +218,28 @@ $csrfToken = generateCsrfToken();
 </head>
 <body>
 
-  <div class="topnav" id="myTopnav">
-    <div id="myLinks">
-        <a href="index.html" class="active"><h1>Occupied Flooring Solutions</h1><img src="images/OccupiedFlooringLogo2024Rev.png" alt="Occupied Flooring Solutions logo"></a>
-        <a href="services.html">Services</a>
-        <a href="process.html">Process</a>
-        <a href="progbenefit.html">Program Benefits</a>
-        <a href="clients.html">Clients</a>
-        <a href="contact.php">Contact</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="click for navigation dropdown">
-        <i class="fa fa-bars"></i>
-    </a>
-  </div>
+<header>
+        <div class="logo-section">
+            <img src="images/nettle.svg" alt="Deane Nettles Logo" class="logo">
+            <div>
+                <h1 class="site-title">Deane <span>Nettles Associates</span></h1>
+                <p class="tagline">Graphic Design, Web Design &amp; Illustration</p>
+            </div>
+        </div>
+    </header>
 
-  <div class="headImage">
-  </div>
+    <nav class="filter-nav">
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Portfolio</a>
+            <a href="about.html" class="nav-link" style="color: var(--accent); border-bottom-color: var(--accent);">About</a>
+            <a href="contact.php" class="nav-link">Contact</a>
+        </div>
+    </nav>
 
-  <div class="wrapper">
-    <main>
-      <h2>Contact</h2>
-      <h3>Let's Plan Your Project with Precision</h3>
+    <main class="page-content">
+        <h2 class="page-title">About <span>Deane Nettles</span></h2>
 
-      <p>Whether you are managing a single occupied renovation or a national flooring program, OFS provides the planning discipline, execution control, and reporting transparency required for success.</p>
+      <p>You want people to know about your company or your mission. We're happy to help you come up with innovative ways to communicate.</p>
       <p>Contact us today to discuss your project and objectives.</p>
 
       <?php if ($formMessage): ?>
@@ -268,7 +285,7 @@ $csrfToken = generateCsrfToken();
 
   </div>
   <footer>
-    <p>© 2026 Occupied Flooring Solutions LLC. All Rights Reserved.</p>
+    <p>© 2026 Deane Nettles Associates LLC. All Rights Reserved.</p>
   </footer>
 
   <script>

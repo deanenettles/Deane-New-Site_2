@@ -170,8 +170,7 @@ $csrfToken = generateCsrfToken();
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-
+  <link rel="stylesheet" href="css/ocs.css">
   <style>
 body {background-color:#ccc;}
 

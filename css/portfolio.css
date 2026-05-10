@@ -17,6 +17,8 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+
     
         body {
             font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -50,7 +52,7 @@
             padding: 2rem 2rem 1rem;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             max-width: 1600px;
             margin: 0 auto;
         }
@@ -70,8 +72,10 @@
             font-family: 'Playfair Display', Georgia, serif;
             font-size: 1.75rem;
             font-weight: 600;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.02rem;
         }
+
+        h2 {font-family: 'Playfair Display', Georgia, serif;}
 
         .site-title span {
             color: var(--accent);
@@ -394,6 +398,8 @@
             color: var(--text-muted);
             font-size: 0.85rem;
             border-top: 1px solid var(--border);
+            background-color:black;
+            margin-top:2rem;
         }
 
         footer a {
@@ -448,3 +454,32 @@
                 transform: translateY(0);
             }
         }
+
+        .page-title {margin-bottom:1rem;}
+
+        .page2-content {
+            background-color:white;
+            padding:3rem 2rem;
+            border-radius:1rem;
+        }
+        .page2-content h2 {margin-bottom:.5rem;  margin-top:1rem;}
+        .page2-content p {margin-bottom:.5rem;}
+        .page2-content blockquote {margin-bottom:1rem;  margin-top:1rem;}
+        
+
+/* FORMS */
+input, textarea {display:block; width:100%;}
+
+input, textarea, select, button {margin-bottom:.5rem; border:.06rem solid #aaa; padding:.5rem; border-radius:.25rem;}
+
+textarea {margin-bottom:1rem;}
+
+.hilight {font-size:small; color:oklch(0.459 0.184 6.94); margin-top:0;}
+
+button[type=submit] {background-color:oklch(0.459 0.184 6.94); color:white;}
+
+button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
+
+button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#ccc; } 
+
+.page-content {width:100%; max-width:1000px; margin:0 auto; padding:0 6rem;}

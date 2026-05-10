@@ -2,6 +2,6 @@
     "name": "occupiedflooring/contact-form",
     "description": "Contact form with PHPMailer",
     "require": {
-        "phpmailer/phpmailer": "^6.9"
+        "phpmailer/phpmailer": "^7.0"
     }
 }

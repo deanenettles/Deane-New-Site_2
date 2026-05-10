@@ -1,8 +1,4 @@
 <?php
-if (!isset($_SERVER['REQUEST_METHOD'])) {
-    $_SERVER['REQUEST_METHOD'] = 'POST'; // or 'GET', depending on the expected behavior
-}
-
 session_start();
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -17,14 +13,20 @@ $formMessage = '';
 $formSuccess = false;
 
 function generateCsrfToken(): string {
-    if (empty($_SESSION['csrf_token'])) {
-        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
-    }
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    $_SESSION['csrf_token_time'] = time();
     return $_SESSION['csrf_token'];
 }
 
-function validateCsrfToken(string $token): bool {
-    return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
+function validateCsrfToken(?string $token): bool {
+    if (empty($token) || empty($_SESSION['csrf_token'])) {
+        return false;
+    }
+    $maxAge = 3600;
+    if (isset($_SESSION['csrf_token_time']) && (time() - $_SESSION['csrf_token_time']) > $maxAge) {
+        return false;
+    }
+    return hash_equals($_SESSION['csrf_token'], $token);
 }
 
 function sanitizeInput(string $input): string {
@@ -42,14 +44,56 @@ function validateEmail(string $email): bool {
     return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+function isGibberish(string $text): bool {
+    $text = strtolower(trim($text));
+    
+    if (strlen($text) < 3) {
+        return false;
+    }
+    
+    $dominated = preg_match('/(.)\1{4,}/', $text);
+    if ($dominated) {
+        return true;
+    }
+    
+    $keyboardPatterns = ['qwerty', 'asdf', 'zxcv', 'qazwsx', 'asdfgh', 'jkl;', 'uiop', 'hjkl', '12345', '!@#$%'];
+    foreach ($keyboardPatterns as $pattern) {
+        if (stripos($text, $pattern) !== false) {
+            return true;
+        }
+    }
+    
+    $letters = preg_replace('/[^a-z]/', '', $text);
+    if (strlen($letters) >= 10) {
+        $vowels = preg_match_all('/[aeiou]/', $letters);
+        $vowelRatio = $vowels / strlen($letters);
+        if ($vowelRatio < 0.15 || $vowelRatio > 0.70) {
+            return true;
+        }
+    }
+    
+    if (preg_match('/[bcdfghjklmnpqrstvwxz]{6,}/i', $letters)) {
+        return true;
+    }
+    
+    $alphaNum = preg_replace('/[^a-z0-9\s]/', '', $text);
+    $specialRatio = 1 - (strlen($alphaNum) / max(strlen($text), 1));
+    if ($specialRatio > 0.4 && strlen($text) > 10) {
+        return true;
+    }
+    
+    return false;
+}
+
+if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST') {
     
     if (!empty($_POST['website_url'])) {
         $formMessage = 'Thank you for your submission.';
         $formSuccess = true;
     } else {
-        if (!isset($_POST['csrf_token']) || !validateCsrfToken($_POST['csrf_token'])) {
-            $formMessage = 'Security validation failed. Please refresh and try again.';
+        $submittedToken = $_POST['csrf_token'] ?? null;
+        if (!validateCsrfToken($submittedToken)) {
+            $formMessage = 'Your session expired or the form was already submitted. Please try again.';
         } else {
             $firstname = sanitizeForHeader($_POST['firstname'] ?? '');
             $lastname = sanitizeForHeader($_POST['lastname'] ?? '');
@@ -73,6 +117,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $errors[] = 'Email is required.';
             } elseif (!validateEmail($email)) {
                 $errors[] = 'Please enter a valid email address.';
+            }
+            
+            if (isGibberish($firstname) || isGibberish($lastname)) {
+                $errors[] = 'Please enter a valid name.';
+            }
+            if (isGibberish($company)) {
+                $errors[] = 'Please enter a valid company name.';
+            }
+            if (!empty($comment) && isGibberish($comment)) {
+                $errors[] = 'Your message appears to contain invalid text. Please write a clear message.';
             }
             
             if (!empty($errors)) {
@@ -150,7 +204,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     
                 } catch (Exception $e) {
                     error_log("PHPMailer Error: " . $mail->ErrorInfo);
-                    $formMessage = 'Sorry, there was an error sending your message. Please try again later.';
+                    $formMessage = 'SMTP Error: ' . htmlspecialchars($mail->ErrorInfo);
                 }
             }
         }
@@ -165,33 +219,14 @@ $csrfToken = generateCsrfToken();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Occupied Flooring</title>
+  <meta name="description" content="To contact Occupied Flooring Solutions about their flooring and interior surface programs in active facilities without disrupting operations, fill out the form below.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/portfolio.css">
-
-
+  <link rel="stylesheet" href="css/ocs.css">
   <style>
-body {background-color:#ccc;}
-
-/* FORMS */
-input, textarea {display:block; width:100%;}
-
-input, textarea, select, button {margin-bottom:.5rem; border:.06rem solid #aaa; padding:.5rem; border-radius:.25rem;}
-
-textarea {margin-bottom:1rem;}
-
-.hilight {font-size:small; color:oklch(0.459 0.184 6.94); margin-top:0;}
-
-button[type=submit] {background-color:oklch(0.459 0.184 6.94); color:white;}
-
-button[type=submit]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#333; color:white;}
-
-button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active {background-color:#ccc; } 
-
     .form-message {
       padding: 15px;
       margin: 20px 0;
@@ -220,28 +255,29 @@ button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active 
 </head>
 <body>
 
-<header>
-        <div class="logo-section">
-            <img src="images/nettle.svg" alt="Deane Nettles Logo" class="logo">
-            <div>
-                <h1 class="site-title">Deane <span>Nettles Associates</span></h1>
-                <p class="tagline">Graphic Design, Web Design &amp; Illustration</p>
-            </div>
-        </div>
-    </header>
+  <div class="topnav" id="myTopnav">
+    <div id="myLinks">
+        <a href="index.html" class="active"><h1>Occupied Flooring Solutions</h1><img src="images/OccupiedFlooringLogo2024Rev.png" alt="Occupied Flooring Solutions logo"></a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Process</a>
+        <a href="progbenefit.html">Program Benefits</a>
+        <a href="clients.html">Clients</a>
+        <a href="contact.php">Contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label="click for navigation dropdown">
+        <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-    <nav class="filter-nav">
-        <div class="nav-links">
-            <a href="index.html" class="nav-link">Portfolio</a>
-            <a href="about.html" class="nav-link" style="color: var(--accent); border-bottom-color: var(--accent);">About</a>
-            <a href="contact.php" class="nav-link">Contact</a>
-        </div>
-    </nav>
+  <div class="headImage">
+  </div>
 
-    <main class="page-content">
-        <h2 class="page-title">About <span>Deane Nettles</span></h2>
+  <div class="wrapper">
+    <main>
+      <h2>Contact</h2>
+      <h3>Let's Plan Your Project with Precision</h3>
 
-      <p>You want people to know about your company or your mission. We're happy to help you come up with innovative ways to communicate.</p>
+      <p>Whether you are managing a single occupied renovation or a national flooring program, OFS provides the planning discipline, execution control, and reporting transparency required for success.</p>
       <p>Contact us today to discuss your project and objectives.</p>
 
       <?php if ($formMessage): ?>
@@ -267,27 +303,30 @@ button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active 
                value="<?php echo isset($_POST['company']) && !$formSuccess ? htmlspecialchars($_POST['company']) : ''; ?>">
         <input type="email" name="email" required placeholder="Email*"
                value="<?php echo isset($_POST['email']) && !$formSuccess ? htmlspecialchars($_POST['email']) : ''; ?>">
-        <p class="hilight">* is required</p>
 
         <p>I'm contacting you about:</p>
         <select name="reason">
           <option value="Project Management" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'Project Management') ? 'selected' : ''; ?>>Project Management</option>
-          <option value="Newsletter" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'Newsletter') ? 'selected' : ''; ?>>Newsletter</option>
+          <option value="portfolio" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'portfolio') ? 'selected' : ''; ?>>Portfolio Review</option>
+          <option value="program" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'program') ? 'selected' : ''; ?>>Program Consultation</option>          
+          <option value="process" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'process') ? 'selected' : ''; ?>>Process Briefing</option>
           <option value="Other" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'Other') ? 'selected' : ''; ?>>Other Reason</option>
-          <option value="Website Error" <?php echo (isset($_POST['reason']) && $_POST['reason'] === 'Website Error') ? 'selected' : ''; ?>>Website Error</option>
         </select>
 
-        <textarea name="comment" cols="45" rows="6" placeholder="Specifics"><?php echo isset($_POST['comment']) && !$formSuccess ? htmlspecialchars($_POST['comment']) : ''; ?></textarea>
+        <textarea name="comment" cols="45" rows="6" placeholder="Message*"><?php echo isset($_POST['comment']) && !$formSuccess ? htmlspecialchars($_POST['comment']) : ''; ?></textarea>
 
-        <button type="submit" value="submit">Submit</button>
-        <button type="reset" value="reset">Reset</button>
+        <p class="hilight">* Required</p>
+
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="clearForm()">Reset</button>
       </form>
       <?php endif; ?>
     </main>
 
   </div>
   <footer>
-    <p>© 2026 Deane Nettles Associates LLC. All Rights Reserved.</p>
+    <p>© 2026 Occupied Flooring Solutions LLC. All Rights Reserved.</p>
   </footer>
 
   <script>
@@ -298,6 +337,16 @@ button[type=reset]:hover, button[type=submit]:focus, button[type=submit]:active 
     } else {
       x.className = "topnav";
     }
+  }
+
+  function clearForm() {
+    var form = document.querySelector('form');
+    var inputs = form.querySelectorAll('input:not([type="hidden"])');
+    inputs.forEach(function(input) {
+      input.value = '';
+    });
+    form.querySelector('textarea').value = '';
+    form.querySelector('select').selectedIndex = 0;
   }
   </script>
 

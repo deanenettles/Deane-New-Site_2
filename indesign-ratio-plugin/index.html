@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RatioApp Type Scale</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>RatioApp</h1>
+            <p class="subtitle">Typographic Scale Generator</p>
+        </header>
+
+        <section class="controls">
+            <div class="input-group">
+                <label for="baseSize">Base Size (pt)</label>
+                <input type="number" id="baseSize" value="16" min="6" max="72" step="0.5">
+            </div>
+
+            <div class="input-group">
+                <label for="ratio">Scale Ratio</label>
+                <select id="ratio">
+                    <option value="1.067">Minor Second (1.067)</option>
+                    <option value="1.125">Major Second (1.125)</option>
+                    <option value="1.200">Minor Third (1.200)</option>
+                    <option value="1.250" selected>Major Third (1.250)</option>
+                    <option value="1.333">Perfect Fourth (1.333)</option>
+                    <option value="1.414">Augmented Fourth (1.414)</option>
+                    <option value="1.500">Perfect Fifth (1.500)</option>
+                    <option value="1.618">Golden Ratio (1.618)</option>
+                    <option value="custom">Custom...</option>
+                </select>
+            </div>
+
+            <div class="input-group custom-ratio-group" id="customRatioGroup" style="display: none;">
+                <label for="customRatio">Custom Ratio</label>
+                <input type="number" id="customRatio" value="1.250" min="1.001" max="3" step="0.001">
+            </div>
+
+            <div class="input-group">
+                <label for="scaleSteps">Scale Steps</label>
+                <div class="range-container">
+                    <input type="range" id="scaleSteps" min="3" max="10" value="6">
+                    <span id="stepsValue">6</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="stylePrefix">Style Prefix</label>
+                <input type="text" id="stylePrefix" value="Heading" placeholder="e.g., Heading, Body, Text">
+            </div>
+        </section>
+
+        <section class="preview">
+            <h2>Generated Scale</h2>
+            <div id="scalePreview" class="scale-list">
+                <!-- Scale items will be generated here -->
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="generateBtn" class="btn primary">
+                <span class="icon">✓</span>
+                Create Paragraph Styles
+            </button>
+            <button id="refreshBtn" class="btn secondary">
+                <span class="icon">↻</span>
+                Refresh Preview
+            </button>
+        </section>
+
+        <div id="statusMessage" class="status-message"></div>
+    </div>
+
+    <script src="js/CSInterface.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

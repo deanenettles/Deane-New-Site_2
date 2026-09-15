@@ -1,9 +1,9 @@
 {
-  "generated": "2026-05-01T00:12:20.013Z",
-  "totalImages": 54,
-  "titlesFromMetadata": 34,
+  "generated": "2026-09-15T00:45:32.138Z",
+  "totalImages": 55,
+  "titlesFromMetadata": 35,
   "titlesFromFilename": 20,
-  "mobileVersions": 26,
+  "mobileVersions": 27,
   "categories": [
     {
       "id": "ads",
@@ -82,14 +82,14 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/WAS_car_wrap.jpg",
-      "srcMobile": null,
-      "filename": "WAS_car_wrap.jpg",
-      "title": "Car wrap designed for the Washington Auto Show",
-      "titleSource": "metadata",
+      "src": "images/ads/WAS_car_wrap.gif",
+      "srcMobile": "images-mobile/ads/WAS_car_wrap.gif",
+      "filename": "WAS_car_wrap.gif",
+      "title": "WAS Car Wrap",
+      "titleSource": "filename",
       "category": "ads",
       "categoryName": "Advertising",
-      "extension": ".jpg"
+      "extension": ".gif"
     },
     {
       "src": "images/ads/WASAutoShow.jpg",
@@ -345,8 +345,18 @@
       "src": "images/fonts/relax.jpg",
       "srcMobile": "images-mobile/fonts/relax.jpg",
       "filename": "relax.jpg",
-      "title": "Relax",
-      "titleSource": "filename",
+      "title": "Relax font lowercase",
+      "titleSource": "metadata",
+      "category": "fonts",
+      "categoryName": "Fonts",
+      "extension": ".jpg"
+    },
+    {
+      "src": "images/fonts/Rosalitax1200.jpg",
+      "srcMobile": null,
+      "filename": "Rosalitax1200.jpg",
+      "title": "Rosalita font, caps + lowercase + glyphs for European languages",
+      "titleSource": "metadata",
       "category": "fonts",
       "categoryName": "Fonts",
       "extension": ".jpg"

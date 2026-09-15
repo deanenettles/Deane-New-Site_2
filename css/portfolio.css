@@ -139,7 +139,7 @@
             transition-property: background-color, border-color, color, box-shadow;
         }
 
-        .footer-btn {margin:.5rem 0; line-height:3rem;}
+        .footer-btn {margin:.5rem 0; line-height:3rem; break-inside:avoid;}
 
         .filter-btn:hover, .footer-btn:hover
  {

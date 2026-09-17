@@ -53,7 +53,7 @@
     },
     {
       "src": "images/ads/BetsyFlowerShoes.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/ads/BetsyFisherFlowerShoes.jpg,
       "filename": "BetsyFlowerShoes.jpg",
       "title": "Bus shelter for Betsy Fisher featuring shoes. Art direction of photo shoot was based on broach with shoes picked to match.",
       "titleSource": "metadata",
@@ -82,7 +82,7 @@
       "extension": ".jpg"
     },
     {
-      "src": "images/ads/WAS_car_wrap.gif",
+      "src": "images/ads/WAS_car_wrap_2019.jpg",
       "srcMobile": "images-mobile/ads/WAS_car_wrap.gif",
       "filename": "WAS_car_wrap.gif",
       "title": "WAS Car Wrap",
@@ -233,7 +233,7 @@
     },
     {
       "src": "images/design/DTD_Poster_2023.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/DTD_Poster_2023.gif,
       "filename": "DTD_Poster_2023.jpg",
       "title": "Poster for Dancing Til Dusk, dance instruction and dances in the summer in downtown Seattle parks, now in its  18th year. (2025)",
       "titleSource": "metadata",
@@ -253,7 +253,7 @@
     },
     {
       "src": "images/design/HolesPoster.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/HolesPoster.gif,
       "filename": "HolesPoster.jpg",
       "title": "HolesPoster",
       "titleSource": "filename",
@@ -263,7 +263,7 @@
     },
     {
       "src": "images/design/MobilityPoster.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/MobilityPoster.gif,
       "filename": "MobilityPoster.jpg",
       "title": "Poster for Innovation in Mobility Public Policy Summit",
       "titleSource": "metadata",
@@ -273,7 +273,7 @@
     },
     {
       "src": "images/design/NatGeoChina.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/NatGeoChina.gif,
       "filename": "NatGeoChina.jpg",
       "title": "Magazine sales brochure for Terra Cotta Warriors exhibit",
       "titleSource": "metadata",
@@ -283,7 +283,7 @@
     },
     {
       "src": "images/design/PolishEmbassyBanner.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/NatGeoChina.gif,
       "filename": "PolishEmbassyBanner.jpg",
       "title": "Stand-up banner for use by the Polish Embassy at exhibits, events and presentations.",
       "titleSource": "metadata",
@@ -293,7 +293,7 @@
     },
     {
       "src": "images/design/TTGPocketFolder.jpg",
-      "srcMobile": null,
+      "srcMobile": images-mobile/design/PolishEmbassyBanner.gif,
       "filename": "TTGPocketFolder.jpg",
       "title": "Pocket folder and inserts for Technology Trends Group, a technology installation company in Washington, DC",
       "titleSource": "metadata",
@@ -353,7 +353,7 @@
     },
     {
       "src": "images/fonts/Rosalitax1200.jpg",
-      "srcMobile": null,
+      "srcMobile": "images-mobile/fonts/Rosalitax800.jpg",
       "filename": "Rosalitax1200.jpg",
       "title": "Rosalita font, caps + lowercase + glyphs for European languages",
       "titleSource": "metadata",

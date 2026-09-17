@@ -116,11 +116,14 @@
                 
             } catch (error) {
                 console.error('Error loading gallery:', error);
+                const openedAsFile = location.protocol === 'file:';
                 gallery.innerHTML = `
                     <div class="error">
                         <p>⚠️ Could not load gallery.</p>
                         <p style="margin-top: 0.5rem; font-size: 0.9rem; color: var(--text-muted);">
-                            Make sure to run <code>node build-gallery.js</code> first.
+                            ${openedAsFile
+                                ? 'This page must be opened through a local server (browsers block loading JSON from <code>file://</code>). Run <code>npm run serve</code>, then open <code>http://localhost:3000</code>.'
+                                : 'Make sure <code>images-manifest.json</code> exists (run <code>node build-gallery.js</code>), then refresh.'}
                         </p>
                     </div>
                 `;
